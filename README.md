@@ -95,3 +95,10 @@ The module provides a convenient way to implement knockback mechanics in your Ro
 The duration parameter controls how long the knockback effect lasts.
 It is important to manage when and how often you apply knockback effects to maintain balanced gameplay.
 
+## Contact
+```
+
+Discord: mashgiach
+
+```
+
