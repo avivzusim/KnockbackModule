@@ -68,7 +68,7 @@ local duration = 0.5
 KnockbackModule.applyKnockbackDirection(player, direction, speed, duration)
 ```
 
-Apply knockback to a player by LookVector
+Apply knockback to a player by LookVector:
 
 ```lua
 -- Load the KnockbackModule
@@ -90,7 +90,7 @@ end
 game.Players.PlayerAdded:Connect(onPlayerAdded)
 ```
 
-Apply knockback to a player by both a primary knockback direction and an additional direction to combine with the player's look vector
+Apply knockback to a player by both a primary knockback direction and an additional direction to combine with the player's look vector:
 
 ```lua
 -- Load the KnockbackModule
