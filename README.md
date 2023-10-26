@@ -66,8 +66,28 @@ local direction = Vector3.new(0, 0, 1) # Forward
 local speed = 45
 local duration = 0.5
 KnockbackModule.applyKnockbackDirection(player, direction, speed, duration)
+```
 
+Apply knockback to a player by LookVector
 
+```lua
+-- Load the KnockbackModule
+local KnockbackModule = require(game.ServerScriptService.KnockbackModule)
+
+-- Function to apply knockback when a player is added
+local function onPlayerAdded(player)
+    wait(3) -- Optional delay before applying knockback
+    
+    -- Specify the desired speed and duration for knockback
+    local speed = 45
+    local duration = 5
+    
+    -- Apply the knockback using the player's look vector
+    KnockbackModule.ApplyKnockbackLookVector(player, speed, duration)
+end
+
+-- Connect the function to the PlayerAdded event
+game.Players.PlayerAdded:Connect(onPlayerAdded)
 ```
 
 ### Notes
