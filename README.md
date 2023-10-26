@@ -90,7 +90,7 @@ end
 game.Players.PlayerAdded:Connect(onPlayerAdded)
 ```
 
-### Notes
+## Notes
 The module provides a convenient way to implement knockback mechanics in your Roblox game, whether for combat, abilities, or other in-game events.
 The duration parameter controls how long the knockback effect lasts.
 It is important to manage when and how often you apply knockback effects to maintain balanced gameplay.
