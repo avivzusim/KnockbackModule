@@ -97,8 +97,6 @@ It is important to manage when and how often you apply knockback effects to main
 
 ## Contact
 ```
-
 Discord: mashgiach
-
 ```
 
