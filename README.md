@@ -118,6 +118,13 @@ end
 game.Players.PlayerAdded:Connect(onPlayerAdded)
 ```
 
+If the "knocked" value exists within a player's character, it indicates that the player is currently knocked:
+```lua
+local function doesPlayerHaveKnockedValue(player)
+    return player.Character and player.Character:FindFirstChild("knocked") ~= nil
+end
+```
+
 ## Notes
 The module provides a convenient way to implement knockback mechanics in your Roblox game, whether for combat, abilities, or other in-game events.
 The duration parameter controls how long the knockback effect lasts.
