@@ -90,6 +90,34 @@ end
 game.Players.PlayerAdded:Connect(onPlayerAdded)
 ```
 
+Apply knockback to a player by both a primary knockback direction and an additional direction to combine with the player's look vector
+
+```lua
+-- Load the KnockbackModule
+local KnockbackModule = require(game.ServerScriptService.KnockbackModule)
+
+-- Function to apply combined knockback when a player is added
+local function onPlayerAdded(player)
+    wait(3) -- Optional delay before applying knockback
+    
+    -- Specify the desired speed and duration for knockback
+    local speed = 45
+    local duration = 5
+    
+    -- Primary knockback direction (e.g., forward)
+    local primaryDirection = Vector3.new(0, 0, 1)
+    
+    -- Additional knockback direction (e.g., right)
+    local additionalDirection = Vector3.new(1, 0, 0)
+    
+    -- Apply the combined knockback
+    KnockbackModule.ApplyCombinedKnockback(player, primaryDirection, additionalDirection, speed, duration)
+end
+
+-- Connect the function to the PlayerAdded event
+game.Players.PlayerAdded:Connect(onPlayerAdded)
+```
+
 ## Notes
 The module provides a convenient way to implement knockback mechanics in your Roblox game, whether for combat, abilities, or other in-game events.
 The duration parameter controls how long the knockback effect lasts.
